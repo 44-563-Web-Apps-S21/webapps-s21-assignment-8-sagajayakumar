@@ -21,11 +21,11 @@ const server =
 
                 console.log("Look for query parameter data: " + search_params.get("data"))
                 const x = search_params.get("x")
-                const res = Math.abs(x)
+                const r = Math.abs(x)
                     // Process the queries here
                 res.statusCode = 200 //code for OK
                 const newLocal = res.setHeader('Content-Type', 'text/plain')
-                res.write('Abs of (  ${x} ) is  ${res}')
+                res.write('Abs of (  ${x} ) is  ${r}')
                 res.end();
 
             } else {
