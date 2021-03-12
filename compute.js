@@ -22,7 +22,7 @@ const server =
                 console.log("Look for query parameter data: " + search_params.get("data"))
                 const x = search_params.get("x");
                 const r = Math.abs(x);
-                const result = 'ABS of ( ${x} ) is  ${r}';
+                const result = `ABS of ${x} is  ${r}`;
                 // Process the queries here
                 res.statusCode = 200 //code for OK
                 const newLocal = res.setHeader('Content-Type', 'text/plain')
