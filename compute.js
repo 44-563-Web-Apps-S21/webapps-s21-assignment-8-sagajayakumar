@@ -24,7 +24,7 @@ const server =
                 const res = Math.abs(x)
                     // Process the queries here
                 res.statusCode = 200 //code for OK
-                res.setHeader('Content-Type', 'text/plain')
+                const newLocal = res.setHeader('Content-Type', 'text/plain')
                 res.write('Abs of (  ${x} ) is  ${res}')
                 res.end();
 
