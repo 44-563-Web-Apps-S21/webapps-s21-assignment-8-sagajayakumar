@@ -15,12 +15,13 @@ const server =
             const search_params = url.searchParams
 
 
-            console.log("Queries: " + search_params)
+            //console.log("Queries: " + search_params)
 
             if (req.method === 'GET') {
 
                 const x = search_params.get("x");
                 const r = Math.abs(x);
+
                 const result = `ABS of ${x} is  ${r}`;
                 // Process the queries here
                 res.statusCode = 200 //code for OK

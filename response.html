@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title> Types of Story telling </title>
+</head>
+
+<body onload="javascript:r()">
+    <h1>Types of story telling by Jaya Kumar Saga</h1>
+    <p id="p1">Movie</p>
+</body>
+<script>
+    function r() {
+        const a = ['movie', 'drama', 'web series', 'short film', 'stage Act', 'silent film'];
+        var cd = Math.floor((Math.random() * 5) + 0);
+        console.log(cd);
+        document.getElementById('p1').innerHTML = a[cd];
+    }
+</script>
+
+</html>
